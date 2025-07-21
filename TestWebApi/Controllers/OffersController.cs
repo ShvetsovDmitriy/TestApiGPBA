@@ -19,7 +19,7 @@ namespace TestWebApi.Controllers
             _offerSearchService = offerSearchService;      
         }
        
-        [HttpPost]
+        [HttpPost("create-supplier")]
         [ProducesResponseType(typeof(OfferDTO), StatusCodes.Status201Created)]
         [ProducesResponseType(StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status404NotFound)]

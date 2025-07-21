@@ -8,10 +8,8 @@ namespace TestWebApi.Models
         public string Brand { get; set; } = string.Empty;
         public string Model { get; set; } = string.Empty;
         public Guid SupplierId { get; set; }
-
         [JsonIgnore]
         public virtual Supplier Supplier { get; set; } = null!;
-
         public DateTime RegistrationDate { get; set; } = DateTime.UtcNow;
     }
 }
